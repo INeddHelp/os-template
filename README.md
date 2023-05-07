@@ -23,3 +23,7 @@ To contribute, please follow these steps:
 - Push your changes to your fork.
 - Submit a pull request to the main repository.
 We appreciate all contributions, and will review pull requests as quickly as possible. However, please note that we are a small team and may not be able to address every issue immediately. If you would like to discuss a potential contribution before starting work, please open an issue and we'll be happy to chat with you!
+
+# License 
+
+This project is under MIT license.
