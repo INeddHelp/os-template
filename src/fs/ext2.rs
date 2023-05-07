@@ -129,7 +129,7 @@ fn find_inode(path: &str, storage: &Storage, block_group_size: &usize) -> Inode 
     let mut current_inode = read_inode(2, storage, block_group_size); /* Root directory inode */
 
     for part in path_parts {
-        if part == "" {
+        if part.is_empty() {
             continue;
         }
 
