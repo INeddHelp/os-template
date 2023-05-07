@@ -3,7 +3,7 @@
 "OS Template" is a starter template for building a custom operating system from scratch. It includes a basic file structure with subfolders for different components of the operating system, such as drivers, filesystem-related code, memory management, and more. The template is designed to be highly modular and customizable, allowing developers to create a custom operating system tailored to their needs. This template is not a complete operating system but rather a starting point for developers who want to create their own custom OS. Contributions are welcome via pull requests to help improve and expand the template.
 > All the files are in the `src` folder.
 
-!(screenshot)[https://i.ibb.co/jZ3nWFY/Screenshot-from-2023-05-07-17-31-53.png]
+![screenshot](https://i.ibb.co/jZ3nWFY/Screenshot-from-2023-05-07-17-31-53.png)
 # Installation 
 
 To clone this project, open the terminal and type:
