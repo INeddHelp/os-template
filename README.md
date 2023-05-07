@@ -4,6 +4,46 @@
 > All the files are in the `src` folder.
 
 ![screenshot](https://i.ibb.co/jZ3nWFY/Screenshot-from-2023-05-07-17-31-53.png)
+
+## Tree
+
+src
+|
+|
+|- arch
+|    armv7.rs, x86_64.rs
+|
+|- drivers
+|    keyboard.rs, network.rs, storage.rs
+|
+|- fs
+|    ext2.rs, fat.rs, vfs.rs
+|
+|- kernel 
+|    interrupts.rs, memory.rs, scheduler.rs
+|
+|- lib
+|     collections.rs, io.rs, sync.rs
+|
+|- mm
+|     allocator.rs, pagign.rs
+|
+|- net
+|     ip.rs, tcp.rs, udp.rs 
+|
+|- process 
+|     process.rs, thread.rs 
+|
+|- syscall
+|     syscall.rs, syscalls.s
+|
+|- tests 
+|     keyboard_test.rs, network_test.rs
+|
+|- util
+|     logging.rs, time.rs 
+|
+
 # Installation 
 
 To clone this project, open the terminal and type:
