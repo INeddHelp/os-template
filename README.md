@@ -45,7 +45,7 @@ src\
 |\
 |- util\
 |     logging.rs, time.rs \
-|\
+|
 
 # Installation 
 
