@@ -1,6 +1,19 @@
 # os-template
 
-"OS Template" is a starter template for building a custom operating system from scratch. It includes a basic file structure with subfolders for different components of the operating system, such as drivers, filesystem-related code, memory management, and more. The template is designed to be highly modular and customizable, allowing developers to create a custom operating system tailored to their needs. This template is not a complete operating system but rather a starting point for developers who want to create their own custom OS. Contributions are welcome via pull requests to help improve and expand the template.
+OS Template
+This is a template for a simple operating system (OS) built from scratch using Rust programming language. The goal of this project is to provide a basic skeleton that you can build upon to create your own OS or experiment with operating system concepts.
+
+## Features
+The OS Template provides a number of features out-of-the-box, including:
+
+- Kernel: A simple kernel that manages memory, interrupts, and basic system calls.
+- File System: Support for multiple file systems, including FAT and EXT2.
+- Networking: Basic networking support with TCP, UDP, and IP protocols.
+- GUI: A simple GUI toolkit with support for basic widgets and layouts.
+- Drivers: Support for common drivers, including keyboard, network, and storage.
+- Security: Basic security features, including authentication and firewall.
+- Testing: A suite of tests for different components of the OS.
+
 
 [Clone this project](https://github.com/INeddHelp/os-template#installation)
 
