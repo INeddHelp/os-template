@@ -10,74 +10,42 @@
 
 ## Tree
 
-.:
-arch  boot  core  crypto  db  drivers  fs  gui  kernel  lib  main.rs  mm  net  process  securety  storage  tests  util
-
-./arch:\
-armv7.rs  mips.rs  x86_64.rs
-
-./boot:\
-bios.rs  grub.rs  uefi.rs
-
-./core:\
-config.rs  error.rs  init.rs
-
-./crypto:\
-cipher.rs  hash.rs  hmac.rs
-
-./db:\
-postgres.rs  redis.rs  sqlite.rs
-
-./drivers:\
-gpu.rs  keyboard.rs  network.rs  storage.rs
-
-./fs:\
-ext2.rs  fat.rs  nfts.rs  vfs.rs
-
-./gui:\
-button.rs  components  event.rs  images  label.rs  layouts  menu.rs  textbox.rs  theme.rs  themes  utils  widget.rs  window.rs
-
-./gui/components:\
-button.rs  label.rs  menu.rs  textbox.rs
-
-./gui/images:\
-> You have to insert the images
-
-./gui/layouts:\
-flex.rs  grid.rs  stack.rs
-
-./gui/themes:\
-dark.rs  light.rs
-
-./gui/utils:\
-color.rs  font.rs  image.rs  input.rs
-
-./kernel:\
-interrupts.rs  memory.rs  scheduler.rs  syscall.rs
-
-./lib:\
-collections.rs  io.rs  math.rs  sync.rs
-
-./mm:\
-allocator.rs  paging.rs  virtual.rs
-
-./net:\
-dns.rs  ip.rs  tcp.rs  udp.rs
-
-./process:\
-ipc.rs  process.rs  thread.rs
-
-./securety:\
-auth.rs  firewall.rs  tls.rs
-
-./storage:\
-block.rs  inode.rs  journal.rs
-
-./tests:\
-keyboard_test.rs  network_test.rs  unit_test.rs
-
-./util:\
-config.rs  logging.rs  time.rs
+src\
+|\
+|\
+|- arch\
+|    armv7.rs, x86_64.rs\
+|\
+|- drivers\
+|    keyboard.rs, network.rs, storage.rs\
+|\
+|- fs\
+|    ext2.rs, fat.rs, vfs.rs\
+|\
+|- kernel \
+|    interrupts.rs, memory.rs, scheduler.rs\
+|\
+|- lib\
+|     collections.rs, io.rs, sync.rs\
+|\
+|- mm\
+|     allocator.rs, pagign.rs\
+|\
+|- net\
+|     ip.rs, tcp.rs, udp.rs \
+|\
+|- process \
+|     process.rs, thread.rs \
+|\
+|- syscall\
+|     syscall.rs, syscalls.s\
+|\
+|- tests \
+|     keyboard_test.rs, network_test.rs\
+|\
+|- util\
+|     logging.rs, time.rs \
+|
 
 # Installation 
 
