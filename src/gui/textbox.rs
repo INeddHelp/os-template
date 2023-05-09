@@ -17,38 +17,35 @@ impl Textbox {
     }
 
     pub fn handle_event(&mut self, event: &Event) {
-        match event {
-            Event::Key(key) => {
-                match key {
-                    Key::Backspace => {
-                        if self.cursor_pos > 0 {
-                            self.text.remove(self.cursor_pos - 1);
-                            self.cursor_pos -= 1;
-                        }
+        if let Event::Key(key) = event {
+            match key {
+                Key::Backspace => {
+                    if self.cursor_pos > 0 {
+                        self.text.remove(self.cursor_pos - 1);
+                        self.cursor_pos -= 1;
                     }
-                    Key::Delete => {
-                        if self.cursor_pos < self.text.len() {
-                            self.text.remove(self.cursor_pos);
-                        }
+                }
+                Key::Delete => {
+                    if self.cursor_pos < self.text.len() {
+                        self.text.remove(self.cursor_pos);
                     }
-                    Key::Left => {
-                        if self.cursor_pos > 0 {
-                            self.cursor_pos -= 1;
-                        }
+                }
+                Key::Left => {
+                    if self.cursor_pos > 0 {
+                        self.cursor_pos -= 1;
                     }
-                    Key::Right => {
-                        if self.cursor_pos < self.text.len() {
-                            self.cursor_pos += 1;
-                        }
-                    }
-                    Key::Char(c) => {
-                        self.text.insert(self.cursor_pos, *c);
+                }
+                Key::Right => {
+                    if self.cursor_pos < self.text.len() {
                         self.cursor_pos += 1;
                     }
-                    _ => {}
                 }
+                Key::Char(c) => {
+                    self.text.insert(self.cursor_pos, *c);
+                    self.cursor_pos += 1;
+                }
+                _ => {}
             }
-            _ => {}
         }
     }
 }

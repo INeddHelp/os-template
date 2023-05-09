@@ -35,11 +35,8 @@ impl Menu {
 
 impl EventHandler for Menu {
     fn handle_event(&mut self, event: &Event) {
-        match event {
-            Event::MouseClick(x, y) => {
-                // TODO: handle click event
-            }
-            _ => {}
+        if let Event::MouseClick(x, y) = event {
+            // TODO: handle click event
         }
     }
 }
