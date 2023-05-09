@@ -12,7 +12,7 @@ impl Spinlock {
     }
 
     pub fn lock(&self) {
-        while self.lock.compare_and_swap(false, true, Ordering::Acquire) != false {}
+        while !self.lock.compare_and_swap(false, true, Ordering::Acquire) {}
     }
 
     pub fn unlock(&self) {
