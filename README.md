@@ -53,7 +53,7 @@ button.rs  components  event.rs  images  label.rs  layouts  menu.rs  textbox.rs 
 ./gui/components:\
 button.rs  label.rs  menu.rs  textbox.rs
 
-./gui/images:\
+./gui/images:
 > You have to insert the images
 
 ./gui/layouts:\
